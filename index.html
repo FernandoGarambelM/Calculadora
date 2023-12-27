@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <form action="/cgi-bin/calculator.cgi" method="post">
+            <input type="text" name="expression" id="expression" readonly>
+            <br>
+            <button type="button" name="digit" value="1" onclick="addToExpression(this.value)">1</button>
+            <br>
+            <button type="submit" name="operator" value="=">Calcular</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
